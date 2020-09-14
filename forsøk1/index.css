@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /*16px * 0.625 = 10px*/
+}
+
+
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+}
+
+header {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.068);
+    padding: 2rem;
+    position: fixed;
+    width: 100vw;
+ }
+ 
+ header nav {
+    height: 100%;
+     max-width: 80vw;
+     margin: auto;
+     display: flex;
+     align-items: center;
+ }
+ 
+ header nav a {
+     height: 100%;
+     color: red;
+     text-decoration: none;
+     padding: 12px;
+ }
+ 
+ #uu {
+     color: red;
+     font-weight: 900;
+ }
+ 
+ #medlem {
+     margin-left: auto;
+     color: red;
+     border: 1px solid red;
+ }
+
+ #til-topp {
+    font-size: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+#til-topp:hover {
+    height: 15rem;
+    width: 15rem;
+}
+
+main {
+    max-width: 80vw;
+    margin: auto;
+    padding: 1.6rem;
+}
+
+.the-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.the-grid a {
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column; /*default*/
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 2.2rem;
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    background-color: red;
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.big {
+    font-size: 3rem;
+}
+
+.the-grid p {
+    padding-top: 1rem;
+}
+
+.r-2 {
+    grid-row: span 2;
+}
+
+.c-2 {
+    grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+    .the-grid {
+        grid-template-columns: 1fr;
+    }
+    .r-2 {
+        grid-row: span 1;
+    }
+    .c-2 {
+        grid-column: span 1;
+    }
+}

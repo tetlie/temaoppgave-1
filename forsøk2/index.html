@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>UU</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#top" id="uu">Partiet UU</a>
+            <a href="#aktuelt">Aktuelt</a>
+            <a href="#politikk">Politikk</a>
+            <a href="#footer">Om oss</a>
+            <a href="#footer" id="medlem">Bli medlem</a>
+        </nav>
+    </header>
+
+    <nav>
+        <a href="#top">
+            <div id="til-topp">
+                <p>Til toppen</p>
+            </div>
+        </a>
+    </nav>
+
+    <main>
+
+        <section id="top">
+            <article id="three">
+                <h1>Partiet UU</h1>
+                <p>En brukervennlig hverdag, for alle.</p>
+
+            </article>
+        </section>
+
+        <section id="aktuelt">
+            <article id="two">
+                <h1>Kunstsamling</h1>
+                <p>Parkens kunstsamling består i 2020 av 42 skulpturer. Alle skulpturer har blitt nøye utvalgt av et
+                    kunstfaglig utvalg og er tilgjengelig hele året. </p>
+            </article>
+        </section>
+
+
+        <section id="politikk">
+            <article id="one">
+                <h1>Anerkjennelse</h1>
+                <p>Universell utforming handlar om å utforme omgjevnadane slik at vi tek omsyn til variasjonen i
+                    funksjonsevne hos innbyggarane, inkludert personar med nedsett funksjonsevne. Når du lagar noko som
+                    er universelt utforma, når du alle målgruppene gjennom éi og same løysing.
+                </p>
+            </article>
+        </section>
+    </main>
+
+
+
+
+    <footer id="footer">
+
+
+        <section class="signup-section">
+            <article id="foot">
+                <h1>Hold deg oppdatert</h1>
+                <p>Bli medlem og få tilsendt vårt nyhetsbrev. </p>
+            </article>
+            <div class="signup-container">
+                <h1>Meld deg inn</h1>
+                <form action="kvittering.html">
+                    <div class="form-group">
+                        <label for="navn">Skriv inn navn her</label>
+                        <input type="text" id="navn" name="fulltnavn" placeholder="Ditt navn her" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="epost">E-post</label>
+                        <input type="email" id="epost" name="epostadresse" placeholder="Din e-post" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passord">Ditt foretrukne passord</label>
+                        <input type="password" id="passord" name="passord" required>
+                    </div>
+                    <strong>Velg abonnement</strong>
+                    <div class="form-group">
+                        <input type="radio" id="sub_basic" name="abonnement" value="sub_basic" required>
+                        <label for="sub_basic">Basic</label>
+                        <input type="radio" id="sub_premium" name="abonnement" value="sub_premium" required checked>
+                        <label for="sub_premium">Premium</label>
+                    </div>
+                    <button class="btn-submit" type="submit">Bli med!</button>
+                </form>
+            </div>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

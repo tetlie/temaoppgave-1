@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+   /*16px * 0.625 = 10px*/;
+  }
+  
+  body {
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  h1 {
+    font-size: 7rem;
+  }
+  
+  header {
+    padding: 2rem;
+    position: fixed;
+    width: 100vw;
+  }
+  
+  header nav {
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav a {
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+  }
+  
+  #uu {
+    color: white;
+    font-weight: 900;
+  }
+  
+  #medlem {
+    margin-left: auto;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  #til-topp {
+    font-size: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    transition: 0.5s;
+    margin: 10px;
+  }
+  
+  #til-topp:hover {
+    height: 15rem;
+    width: 15rem;
+  }
+  
+  a:hover, a:active {
+    color: black;
+  }
+  
+  main {
+    height: 100vh;
+   /*definere hva som skal skrolles*/
+    scroll-behavior: smooth;
+   /*myk overgang i scroll*/
+    overflow: auto;
+   /*hvordan oppfører det som er utenfor vinduet seg*/
+    scroll-snap-type: y mandatory;
+   /*vis kun én section om gangen*/;
+  }
+  
+  section {
+    height: 100vh;
+   /*hver section skal ta opp 100% av viewport-height*/
+    scroll-snap-align: center;
+   /*hvor skal elementene snappe*/
+    text-align: center;
+    height: 100%;
+    display: grid;
+    gap: 80px;
+    padding: 50px;
+    align-content: center;
+  }
+  
+  #politikk {
+    background-color: orangered;
+    background-image: url(./img/statue-1.JPG);
+    background-size: 50vw;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  #one {
+    max-width: 50vw;
+    grid-column: 2;
+    text-align: start;
+  }
+  
+  #aktuelt {
+    background-color: pink;
+    background-image: url(./img/statue-2.JPG);
+    background-size: 50vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  #two {
+    max-width: 50vw;
+    grid-column: 1;
+    text-align: end;
+  }
+  
+  #top {
+    background-color: lime;
+    background-image: url(https://miro.medium.com/max/2000/1*ULlH8C7E81zq2YNa19BEow.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+  }
+  
+  #three {
+    grid-column: 1;
+  }
+  
+  .the-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+  }
+  
+  footer {
+    height: 100vh;
+   /*hver section skal ta opp 100% av viewport-height*/
+    scroll-snap-align: center;
+   /*hvor skal elementene snappe*/
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 80px;
+    background-color: black;
+  }
+  
+  #foot {
+    grid-column: 1;
+  }
+  
+  .signup-section {
+    background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-container {
+    background-color: grey;
+    max-width: 600px;
+    padding: 2em;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-top: 10px;
+  }
+  
+  input[type=text],
+    input[type=password],
+    input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+    
+    /*
+      Hvis vi velger å gjemme selve radio-knappen, er det lurt å ikke bruke display: none,
+      for da blir den utilgjengelig for brukere som bare bruker keyboardet.
+      I stedet gjør vi den usynlig, men beholder den tilgjengelig.
+    */
+  input[type=radio] {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+  }
+    
+    /*
+      + i css betyr elementet som kommer direkte etter det foregående elementet i html-en.
+      I dette tilfellet ønsker vi å velge labelen som er direkte etter radioknappen vår.
+    */
+  input[type=radio] + label {
+    background-color: white;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+  }
+    
+    /*
+      For radioknapper og checkbox-er kan vi bruke :checked for å style hvordan ting ser ut når de er merket av.
+      Her ønsker vi å angi css for labeler som er direkte etter en avmerket radioknapp.
+    */
+  input[type=radio]:checked + label {
+    background-color: black;
+    color: white;
+  }
+  
+  .btn-submit {
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    float: right;
+  }
+    
+    /*
+      Stiler for når radioknappene har focus (f.eks. hvis man tab-er seg gjennom skjemaet)
+      Inputs får en default :focus-stil av nettleseren, men label gjør ikke det.
+    */
+  input[type=radio]:focus + label {
+    font-style: italic;
+  }
+  
+  
+  
