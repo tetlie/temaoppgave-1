@@ -2,19 +2,35 @@
 
 #top {
   height: 100vh;
-  background-color: #f4a2a2;
-  background-image: url(./img/wave-tresh.png);
+  background-color: #e5f4a2;
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
 }
 
-#top-article {
-  width: 50vw;
+#top-text p {
+  font-size: 4rem;
+}
+
+#top-text h1 {
+  font-size: 4rem;
+}
+
+#top-img {
+  height: 80vh;;
+  background-image: url(./img/fi-logo-svart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left; 
 }
 
 #aktuelt {
+  font-size: 2.5rem;
   min-height: 100vh;
   background-color: #f4b5a2;
 }
@@ -55,7 +71,7 @@
 }
 
 #politikk {
-  min-height: 150vh;
+  min-height: 100vh;
   background-color: #f4c3a2;
 }
 
@@ -77,16 +93,16 @@
   justify-content: flex-start;
   align-content: flex-start;
   border-radius: 1rem;
+  transition: 0.5s;
+
 }
 
 #politikk div:hover {
   background-color: black;
   color: #f4c3a2;
+  transform: scale(1.05);
 }
 
-#politikk div:hover img {
-  mix-blend-mode: luminosity;
-}
 
 #ordbok {
   background-color: #f4e1a2;
@@ -112,7 +128,8 @@
 #ordbok a:hover, a:active {
   /* text-decoration: underline 1.5px; */
   transform: scale(1.05);
-  background-color: inherit;
+  background-color: black;
+  color: #f4e1a2;
 }
 
 #om-oss {
@@ -147,7 +164,8 @@
   height: 100vh;
   background-color: #f3f4a2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-columns: 2fr 1fr;
   
 }
 
@@ -167,6 +185,7 @@
 }
 
 #meldinger p {
+  font-size: 1.7rem;
   z-index: 5;
   margin: 0;
   padding: 1rem;

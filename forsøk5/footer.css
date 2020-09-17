@@ -8,6 +8,11 @@
     margin: auto;
     height: 30vh;
   } 
+
+  #footer {
+    background-color: black;
+    color: white;
+  }
   
   .signup-container {
     background-color: black;
@@ -25,6 +30,12 @@
   .form-group {
     transition: 0.5s;
     padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 2rem;
   }
 
   #email-submit:hover {
@@ -39,6 +50,9 @@
     border-radius: 1rem;
     font-size: 2rem;
     background-color: inherit;
+    text-decoration: line-through;
+    transition: 0.5s;
+
   }
   
   .btn-submit:hover {
@@ -47,7 +61,7 @@
   }
 
     input[type=email] {
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     color: white;
     border: 1.5px solid white;
@@ -60,7 +74,7 @@
 input[type=checkbox] {
     width: 1px;
     height: 1px;
-    opacity: 0;
+    display: none;
     position: absolute;
   }
 
@@ -82,5 +96,5 @@ input[type=checkbox] {
   }
 
   input[type=checkbox]:checked ~ .btn-submit {
-    background-color: lime;
+    text-decoration: none;
 }

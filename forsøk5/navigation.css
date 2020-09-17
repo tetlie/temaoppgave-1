@@ -14,10 +14,11 @@ header nav {
   margin: auto;
   display: flex;
   align-items: center;
-  align-content: center;
 }
 
 header nav a {
+  align-items: center;
+
   height: 100%;
   color: white;
   text-decoration: none;
@@ -37,6 +38,8 @@ header nav a:active {
 
 header nav img {
   width: 5rem;
+  vertical-align: middle;
+
 }
 
 #medlem {
@@ -49,24 +52,22 @@ header nav img {
   /* TIL TOPP */
   
 #til-topp {
-  font-size: 3rem;
-  height: 10rem;
-  width: 10rem;
+  font-size: 2rem;
+  height: 7rem;
+  width: 7rem;
   background-color: black;
   border-radius: 50%;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 1vh;
+  right: 1vh;
   z-index: 3;
   transition: 0.5s;
-  margin: 10px;
 }
 
 #til-topp:hover {
-  height: 15rem;
-  width: 15rem;
+    transform: scale(1.1);
 }

@@ -14,30 +14,30 @@
     line-height: 1.4;
     letter-spacing: normal;
     color: black;
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   
   h1 {
+    font-size: 4rem;
+}
+  
+  h2 {
     font-size: 3rem;
   }
   
-  h2 {
-    font-size: 2rem;
-  }
-  
-  h1, h2, p {
+  /* h1, h2, p {
     text-align: left;
-  }
+  } */
   
   
-  h2, p, img {
-    padding: 0rem 2rem 2rem 0rem;
+  h1, h2, p, img {
+    padding: 0rem 0rem 2rem 0rem;
   }
   
   main img {
     max-width: 100%;
-    filter: grayscale(100%);
     mix-blend-mode: multiply;
+    filter: grayscale(100%);
   }
 
   main img:hover {
