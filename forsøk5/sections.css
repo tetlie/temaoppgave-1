@@ -1,4 +1,11 @@
-/*SECTIONS-ID*/
+section {
+  scroll-snap-align: center;
+  display: grid;
+  padding: 6rem 2rem;
+  align-content: center;
+  grid-row-gap: 2rem;
+  padding: 10rem;
+}
 
 #top {
   height: 100vh;
@@ -22,11 +29,11 @@
 }
 
 #top-img {
-  height: 80vh;;
+  height: 80vh;
   background-image: url(./img/fi-logo-svart.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left; 
+  background-position: left;
 }
 
 #aktuelt {
@@ -41,20 +48,18 @@
   grid-auto-rows: minmax(100px);
   grid-gap: 2rem;
   grid-auto-flow: dense;
- /* fyller griden med innhold der det er plass */;
 }
 
 #aktuelt div {
-  border: 1.5px solid black;
+  border: 2px solid black;
   min-height: 20rem;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: top;
   justify-content: left;
   border-radius: 1rem;
-  /* background-image: url(http://dajistudio.com/config/wp-content/themes/dajistudio/images/dot.gif);
-  background-size: 2px 2px; */;
+  transition: 0.5s;
 }
 
 .c-2 {
@@ -68,6 +73,9 @@
 #aktuelt div:hover {
   background-color: black;
   color: #f4b5a2;
+  transform: scale(1.05);
+  font-weight: 900;
+  font-size: 3rem;
 }
 
 #politikk {
@@ -87,14 +95,13 @@
 
 #politikk div {
   padding: 2rem;
-  border: 1.5px solid black;
+  border: 2px solid black;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-content: flex-start;
   border-radius: 1rem;
   transition: 0.5s;
-
 }
 
 #politikk div:hover {
@@ -103,12 +110,11 @@
   transform: scale(1.05);
 }
 
-
-#ordbok {
+#saker {
   background-color: #f4e1a2;
 }
 
-#ordbok-article {
+#saker-article {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -116,64 +122,43 @@
   gap: 2rem;
 }
 
-#ordbok a {
+#saker a {
+  font-size: 2.3rem;
   color: black;
   text-decoration: none;
   transition: 0.5s;
-  border: 1.5px solid black;
+  border: 2px solid black;
   padding: 1rem;
   border-radius: 1rem;
 }
 
-#ordbok a:hover, a:active {
-  /* text-decoration: underline 1.5px; */
+#saker a:hover, a:active {
   transform: scale(1.05);
   background-color: black;
   color: #f4e1a2;
 }
 
 #om-oss {
-  background-color: #f3f4a2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#om-oss-article {
-}
-
-#personer-article {
-  display: flex;
-  gap: 2rem;
-}
-
-#personer-article div {
-  padding: 2rem;
-  border: 1.5px solid black;
-  display: flex;
-  flex-direction: column;
-  border-radius: 1rem;
-}
-
-#personer-article img {
-}
-
-#personer-article h2, p {
-}
-
-#faq {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f3f4a2;
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: 2fr 1fr;
-  
 }
 
-#faq article {
-  /* background-color: white; */
+#om-oss article {
+}
+
+#beskrivelse {
+  padding-right: 5rem;
+}
+
+#beskrivelse {
+  font-size: 3rem;
 }
 
 #meldinger {
+  max-height: 100vh;
   background-image: linear-gradient(transparent 95%,black);
   margin-left: auto;
   margin-right: auto;
@@ -193,7 +178,6 @@
   max-width: 75%;
   background-color: black;
   color: #f3f4a2;
-  /* border: 1.5px solid black; */
 }
 
 .me {
@@ -209,20 +193,34 @@
   background-color: #f4b5a2;
 }
 
+#personer-article div {
+  padding: 2rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+
+#personer-article div:hover {
+  transform: scale(1.05);
+}
+
+#personer-article h2, p {
+  font-size: 2rem;
+  padding: 0;
+}
+
 #personer-article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 2rem;
- /* fyller griden med innhold der det er plass */;
 }
 
 #personer-article div {
-  border: 1.5px solid black;
+  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 1rem;
-  /* background-image: url(http://dajistudio.com/config/wp-content/themes/dajistudio/images/dot.gif);
-  background-size: 2px 2px; */
 }
