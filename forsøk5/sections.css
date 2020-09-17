@@ -1,0 +1,209 @@
+/*SECTIONS-ID*/
+
+#top {
+  height: 100vh;
+  background-color: #f4a2a2;
+  background-image: url(./img/wave-tresh.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#top-article {
+  width: 50vw;
+}
+
+#aktuelt {
+  min-height: 100vh;
+  background-color: #f4b5a2;
+}
+
+#aktuelt-article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(100px);
+  grid-gap: 2rem;
+  grid-auto-flow: dense;
+ /* fyller griden med innhold der det er plass */;
+}
+
+#aktuelt div {
+  border: 1.5px solid black;
+  min-height: 20rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: left;
+  border-radius: 1rem;
+  /* background-image: url(http://dajistudio.com/config/wp-content/themes/dajistudio/images/dot.gif);
+  background-size: 2px 2px; */;
+}
+
+.c-2 {
+  grid-column: span 2;
+}
+
+.r-2 {
+  grid-row: span 2;
+}
+
+#aktuelt div:hover {
+  background-color: black;
+  color: #f4b5a2;
+}
+
+#politikk {
+  min-height: 150vh;
+  background-color: #f4c3a2;
+}
+
+#politikk-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+#politikk div img {
+  max-height: 40vh;
+}
+
+#politikk div {
+  padding: 2rem;
+  border: 1.5px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  border-radius: 1rem;
+}
+
+#politikk div:hover {
+  background-color: black;
+  color: #f4c3a2;
+}
+
+#politikk div:hover img {
+  mix-blend-mode: luminosity;
+}
+
+#ordbok {
+  background-color: #f4e1a2;
+}
+
+#ordbok-article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 2rem;
+}
+
+#ordbok a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+  border: 1.5px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#ordbok a:hover, a:active {
+  /* text-decoration: underline 1.5px; */
+  transform: scale(1.05);
+  background-color: inherit;
+}
+
+#om-oss {
+  background-color: #f3f4a2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#om-oss-article {
+}
+
+#personer-article {
+  display: flex;
+  gap: 2rem;
+}
+
+#personer-article div {
+  padding: 2rem;
+  border: 1.5px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+#personer-article img {
+}
+
+#personer-article h2, p {
+}
+
+#faq {
+  height: 100vh;
+  background-color: #f3f4a2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+#faq article {
+  /* background-color: white; */
+}
+
+#meldinger {
+  background-image: linear-gradient(transparent 95%,black);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  gap: 1rem;
+  overflow-y: scroll;
+  padding: 5rem;
+  z-index: 50;
+}
+
+#meldinger p {
+  z-index: 5;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 75%;
+  background-color: black;
+  color: #f3f4a2;
+  /* border: 1.5px solid black; */
+}
+
+.me {
+  justify-self: end;
+}
+
+.you {
+  justify-self: start;
+}
+
+#personer {
+  min-height: 100vh;
+  background-color: #f4b5a2;
+}
+
+#personer-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+ /* fyller griden med innhold der det er plass */;
+}
+
+#personer-article div {
+  border: 1.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1rem;
+  /* background-image: url(http://dajistudio.com/config/wp-content/themes/dajistudio/images/dot.gif);
+  background-size: 2px 2px; */
+}

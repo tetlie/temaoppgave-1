@@ -25,6 +25,10 @@ h2 {
   font-size: 2rem;
 }
 
+h1, h2, p {
+  text-align: left;
+}
+
 /*HEADER*/
 
 header {
@@ -32,7 +36,6 @@ header {
   padding: 1rem;
   position: fixed;
   width: 100vw;
-  
 }
 
 header nav {
@@ -135,6 +138,7 @@ section {
     background-position: left;
 }
 #top-article {
+  width: 50vw;
 }
 
 #aktuelt {
@@ -199,6 +203,10 @@ section {
   color: white;
 }
 
+#politikk div:hover img {
+  mix-blend-mode: luminosity;
+}
+
 button {
   background-color: inherit;
   border: 1.5px solid black;
@@ -215,7 +223,7 @@ button:hover {
   color: white;;
 }
 
-#politikk h2, p, img {
+h2, p, img {
   padding: 0rem 2rem 2rem 0rem;
 }
 
@@ -291,6 +299,26 @@ img {
 #om-oss-article {
 }
 
+#personer-article {
+  display: flex;
+  gap: 2rem;
+}
+
+#personer-article div {
+  padding: 2rem;
+  border: 1.5px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+#personer-article img {
+}
+
+#personer-article h2, p {
+}
+
+
 #faq {
   background-color:  #f3f4a2;
   display: grid;
@@ -313,7 +341,6 @@ article #meldinger {
 }
 
 #meldinger p {
-  font-family: Helvetica Neue, Arial, sans-serif;
   margin: 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -331,6 +358,29 @@ article #meldinger {
   justify-self: start;
 }
 
+#styret {
+  background-color: #f3f4a2;
+}
+
+
+
+#styret-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+#styret-article div {
+  padding: 2rem;
+  border: 1.5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 1rem;
+  align-items: center;
+  text-align: center;
+}
 
 
 /* FOOTER */

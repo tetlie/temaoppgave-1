@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+     /*16px * 0.625 = 10px*/
+  }
+  
+  body {
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: black;
+    font-size: 2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h1, h2, p {
+    text-align: left;
+  }
+  
+  
+  h2, p, img {
+    padding: 0rem 2rem 2rem 0rem;
+  }
+  
+  main img {
+    max-width: 100%;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+  }
+
+  main img:hover {
+    filter: grayscale(0%);
+    mix-blend-mode: normal;
+  }
+    
+    
+    /*MAIN*/
+    
+  main {
+    height: 100vh;
+     /*definere hva som skal skrolles*/
+    scroll-behavior: smooth;
+     /*myk overgang i scroll*/
+    overflow: auto;
+     /*hvordan oppfører det som er utenfor vinduet seg*/
+    /* scroll-snap-type: y mandatory; */
+     /*vis kun én section om gangen*/
+    ;
+  }
+  
+  
+  /*SECTIONS*/
+  
+  section {
+      /*hver section skal ta opp 100% av viewport-height*/
+    scroll-snap-align: center;
+      /*hvor skal elementene snappe*/
+    /* min-height: 100%; */
+    /*grid*/
+    display: grid;
+    padding: 6rem 2rem;
+    align-content: center;
+    grid-row-gap: 2rem;
+    padding: 10rem;
+
+  }

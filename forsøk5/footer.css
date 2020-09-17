@@ -1,0 +1,86 @@
+/* FOOTER */
+ section #footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 30vh;
+  } 
+  
+  .signup-container {
+    background-color: black;
+    color: white;
+    max-width: 80vw;
+    padding: 2rem ;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  
+  .form-group {
+    transition: 0.5s;
+    padding: 1rem 0 1rem 0;
+  }
+
+  #email-submit:hover {
+    transform: scale(1.05);
+}
+
+    
+  .btn-submit {
+    color: white;
+    padding: 1rem;
+    border: 1.5px solid white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: inherit;
+  }
+  
+  .btn-submit:hover {
+    background-color: white;;
+    color: black;
+  }
+
+    input[type=email] {
+    width: 50%;
+    padding: 1rem;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: inherit;
+
+  }
+
+input[type=checkbox] {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+  }
+
+    input[type=checkbox] + label {
+    transition: box-shadow .12s ease;
+    vertical-align: text-bottom;
+    width: 1rem;
+    height: 1rem;
+    background-color:inherit;
+    padding: 0.5em 1em;
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: inline-block;
+    box-shadow: inset 0 0 0 1px #fff,inset 0 0 0 1px #000,inset 0 0 0 1px #fff;
+  }
+    
+  input[type=checkbox]:checked + label {
+        box-shadow: inset 0 0 0 1px #fff,inset 0 0 0 .4em #000,inset 0 0 0 1.5em #fff;
+  }
+
+  input[type=checkbox]:checked ~ .btn-submit {
+    background-color: lime;
+}
