@@ -80,13 +80,22 @@ section {
 
 #politikk {
   min-height: 100vh;
-  background-color: #f4c3a2;
+  background-color: #f4e1a2;
+}
+
+#politikk > p{
+  max-width: 66%;
+  font-size: 2.3rem;
 }
 
 #politikk-article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
+}
+
+#politikk-article div > p {
+  font-size: 2.3rem;;
 }
 
 #politikk div img {
@@ -106,12 +115,16 @@ section {
 
 #politikk div:hover {
   background-color: black;
-  color: #f4c3a2;
+  color: #f4e1a2;
   transform: scale(1.05);
 }
 
 #saker {
-  background-color: #f4e1a2;
+  background-color: #f4b5a2;
+}
+
+#saker > p {
+  font-size: 2.5rem;
 }
 
 #saker-article {
@@ -121,6 +134,7 @@ section {
   align-content: flex-start;
   gap: 2rem;
 }
+
 
 #saker a {
   font-size: 2.3rem;
@@ -135,22 +149,23 @@ section {
 #saker a:hover, a:active {
   transform: scale(1.05);
   background-color: black;
-  color: #f4e1a2;
+  color: #f4b5a2;
 }
 
 #om-oss {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: #f3f4a2;
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: 2fr 1fr;
 }
 
-#om-oss article {
+#beskrivelse > p {
+  font-size: 2.5rem;
 }
 
 #beskrivelse {
-  padding-right: 5rem;
+  padding-right: 15rem;
 }
 
 #beskrivelse {
@@ -158,15 +173,17 @@ section {
 }
 
 #meldinger {
-  max-height: 100vh;
+  border: 2px solid black;
+
+  max-height: 80vh;
   background-image: linear-gradient(transparent 95%,black);
   margin-left: auto;
   margin-right: auto;
   display: grid;
   gap: 1rem;
   overflow-y: scroll;
-  padding: 5rem;
-  z-index: 50;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 #meldinger p {
@@ -189,7 +206,7 @@ section {
 }
 
 #personer {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: #f4b5a2;
 }
 
